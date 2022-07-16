@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Navigation</title>
+        <link rel="stylesheet" href="./css/style.css">
+
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="navbar__container">
+                <div class="navbar__brand">
+                    <a href="index.html">
+                        <img src="./images/logo.svg" alt="Logo"/>
+                        <!-- logo failus .svg varēja ar ievietot pa tiešo html-->
+                    </a>
+                </div>
+                <ul class="navbar__nav-left">
+                    <li>
+                        <a href="#">Menu</a>
+                    </li>
+                    <li>
+                        <a href="#">Rewards</a>
+                    </li>
+                    <li>
+                        <a href="#">Gift Cards</a>
+                    </li>
+                </ul>
+                <ul class="navbar__nav-right">
+                    <li>
+                        <a href="#">
+                            <img src="./images/marker.svg" alt="">
+                            <span>Find a store</span>
+                        </a>
+                    </li>
+                    <li>
+                        <button class="btn btn__dark-outline">Sign in</button>
+                    </li>
+                    <li>
+                        <button class="btn btn__dark">Join now</button>
+                    </li>
+                </ul>
+                <!--Hamburger menu triger-->
+                <button class="hamburger" type="button" id="menu-btn">
+                    <span class="hamburger__top"></span>
+                    <span class="hamburger__middle"></span>
+                    <span class="hamburger__bottom"></span>
+                </button>
+            </div>
+        </nav>
+        <!--Mobile menu-->
+        <div class="mobile__menu hidden" id="menu">
+            <ul>
+                <li>
+                    <a href="#">Menu</a>
+                </li>
+                <li>
+                    <a href="#">Rewards</a>
+                </li>
+                <li>
+                    <a href="#">Gift Cards</a>
+                </li>
+            </ul>
+            <div class="mobile__menu-bottom">
+                <button class="btn btn__dark-outline">Sign in</button>
+                <button class="btn btn__dark">Join now</button>
+                <div>
+                    <a href="#">
+                        <img src="./images/marker.svg" alt="">
+                        <span>Find a store</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="./js/script.js">
+        </script>
+    </body>
+</html>
