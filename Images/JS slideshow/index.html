@@ -1,9 +1,35 @@
 <!DOCTYPE html>
 <html>
-    <head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Images slider</title>
 
-    </head>
-<body>
-    
-</body>
-    </html>
+    <script>
+        var i = 0; //Starta index
+        var images = []; //masīvs bildēm
+        var time = 3000; //laiks refresh milisecundēs
+
+        //images saraksts
+        images[0] = './images/image_1.jpg';
+        images[1] = './images/image_2.jpg';
+        images[2] = './images/image_3.jpg';
+
+        function changeImg(){
+            document.slide.src = images[i];
+
+            if(i < images.length - 1){
+                i++;
+            } else {
+                i = 0;
+            }
+
+            setTimeout("changeImg()", time);
+        }
+        
+        window.onload = changeImg;
+    </script>
+  </head>
+  <body>
+    <img name="slide" width="400" height="300">
+  </body>
+</html>
